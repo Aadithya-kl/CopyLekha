@@ -1,0 +1,56 @@
+=== DAY 1 ===
+
+=== TASK 1 QUESTION ===
+The table below shows the percentage of households in five European countries that owned a dishwasher in 2000, 2005 and 2010.
+
+Describe the information by selecting and reporting the main features, and make comparisons where relevant.
+
+Data:
+
+| Country | 2000 | 2005 | 2010 |
+| --- | --- | --- | --- |
+| Germany | 45% | 62% | 78% |
+| France | 38% | 55% | 70% |
+| Italy | 25% | 40% | 58% |
+| Spain | 20% | 35% | 52% |
+| Sweden | 50% | 68% | 85% |
+
+=== TASK 1 ANSWER ===
+```text
+The table compares the proportions of households owning a dishwasher in five European countries, namely Germany, France, Italy, Spain and Sweden, over a ten-year period from 2000 to 2010.
+
+Overall, dishwasher ownership increased considerably in all five countries. Sweden consistently recorded the highest percentages, whereas Spain had the lowest figures throughout the period. Furthermore, the gap between the countries with the highest and lowest levels of ownership narrowed slightly over time.
+
+In 2000, Sweden had the largest proportion of dishwasher-owning households, at 50%, followed by Germany at 45%. France occupied the middle position, with 38%, while the corresponding figures for Italy and Spain were considerably lower, at 25% and 20% respectively.
+
+By 2010, ownership had risen substantially across the board. Sweden remained in first place, reaching 85%, while Germany followed at 78%. France also experienced a notable increase, climbing to 70%. Meanwhile, Italy and Spain recorded growth of 33 and 32 percentage points respectively, finishing at 58% and 52%. Despite these increases, both countries remained below the other three nations.
+```
+
+=== TASK 1 VOCABULARY ===
+- increased considerably: rose significantly in amount or level
+- consistently recorded: maintained a particular position or result over time
+- occupied the middle position: ranked between the highest and lowest
+- across the board: affecting all the groups or categories
+
+=== TASK 2 QUESTION ===
+Some people believe that university education should be available to everyone, regardless of their financial circumstances. Others argue that students should pay for their own higher education.
+
+Discuss both views and give your own opinion.
+
+=== TASK 2 ANSWER ===
+```text
+Access to higher education remains a subject of considerable debate, particularly regarding who should bear its financial burden. While some argue that university education ought to be publicly funded and accessible to all, others believe that individuals should be responsible for their own tuition fees. In my view, higher education should be financially accessible to everyone, with governments providing substantial support to those who cannot afford it.
+
+On the one hand, making university education free or heavily subsidised can promote social equality. Students from disadvantaged backgrounds often possess the academic ability to succeed but lack the financial resources to pursue a degree. If tuition fees are excessively high, many talented individuals may abandon their educational ambitions. Consequently, society could lose valuable professionals who might otherwise contribute to economic and social development. For instance, increasing access to publicly funded universities could enable more capable students to enter essential professions such as medicine and engineering. This would benefit both individuals and the wider community.
+
+On the other hand, requiring students to contribute towards their education can reduce the financial pressure on governments. Universities need considerable funding to maintain facilities, employ qualified academics and conduct research. If students pay a reasonable proportion of these expenses, institutions may have greater resources to improve educational standards. Moreover, graduates often enjoy better employment prospects and higher earning potential, meaning that contributing towards tuition costs can be considered a personal investment. Nevertheless, this approach should not create financial barriers for students from low-income households.
+
+In conclusion, although student contributions can help universities maintain their standards, I believe that financial circumstances should never determine who receives higher education. A combination of government funding, scholarships and affordable tuition fees would provide the fairest and most sustainable solution.
+```
+
+=== TASK 2 VOCABULARY ===
+- bear its financial burden: take responsibility for its costs
+- publicly funded: financed by the government
+- promote social equality: encourage equal opportunities within society
+- abandon their educational ambitions: give up their academic goals
+- personal investment: something undertaken to achieve future benefits

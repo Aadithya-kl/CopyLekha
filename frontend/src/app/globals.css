@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Color roles.
+ * shadcn's own names (background, card, primary, muted ...) keep shadcn's meaning,
+ * so its components work as written. The typing boxes use the roles at the end.
+ */
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-error: var(--error);
+  --color-word-pending: var(--word-pending);
+  --color-word-done: var(--word-done);
+  --color-letter-correct: var(--letter-correct);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-hover: var(--hover);
+  --color-sentence: var(--sentence);
+  --color-selected: var(--selected);
+  --color-selected-foreground: var(--selected-foreground);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Light theme */
+:root {
+  --background: #fafaf9; /* page background */
+  --foreground: #1a1c1f; /* main text */
+  --card: #ffffff; /* box / card */
+  --card-foreground: #1a1c1f;
+  --popover: #ffffff;
+  --popover-foreground: #1a1c1f;
+  --primary: #17834a; /* accent: underline, main button, accuracy */
+  --primary-foreground: #ffffff;
+  --secondary: #f1f2f4; /* shadcn: quiet button background */
+  --secondary-foreground: #1a1c1f;
+  --muted: #f1f2f4; /* shadcn: quiet background, for example on hover */
+  --muted-foreground: #5f6670; /* secondary text */
+  --accent: #f1f2f4; /* shadcn: menu item hover background, not the green accent */
+  --accent-foreground: #1a1c1f;
+  --destructive: #d03030; /* mistake */
+  --border: #e3e4e8;
+  --input: #e3e4e8;
+  --ring: #17834a;
+  --radius: 0.625rem;
+
+  --error: #d03030; /* mistake */
+  --word-pending: #4a5058; /* words not typed yet */
+  --word-done: #646b77; /* correct words already typed */
+  --letter-correct: #0b0c0e; /* correct letter in the current word */
+  --warning: #fef3c7; /* notice background: paused, Caps Lock */
+  --warning-foreground: #78350f; /* notice text */
+  --hover: #e4e6ea; /* button and row background under the mouse */
+  --sentence: #f4f5f7; /* the sentence being typed, in the model answer box */
+  --selected: #e2f2e8; /* the chosen time limit, the answer open now */
+  --selected-foreground: #0f5f35; /* text on the selected background */
+}
+
+/* Dark theme */
+.dark {
+  --background: #0f1012;
+  --foreground: #e8eaed;
+  --card: #17191c;
+  --card-foreground: #e8eaed;
+  --popover: #17191c;
+  --popover-foreground: #e8eaed;
+  --primary: #5bd08a;
+  --primary-foreground: #0f1012;
+  --secondary: #22252a;
+  --secondary-foreground: #e8eaed;
+  --muted: #22252a;
+  --muted-foreground: #a3a8b0;
+  --accent: #22252a;
+  --accent-foreground: #e8eaed;
+  --destructive: #ff7b7b;
+  --border: #2b2e33;
+  --input: #2b2e33;
+  --ring: #5bd08a;
+
+  --error: #ff7b7b;
+  --word-pending: #c9cdd3;
+  --word-done: #868c95;
+  --letter-correct: #ffffff;
+  --warning: #3a2e0a;
+  --warning-foreground: #fcd34d;
+  --hover: #2e3238;
+  --sentence: #1f2226;
+  --selected: #173322;
+  --selected-foreground: #6fdc9a;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+
+  /* Cursors: Tailwind 4 gives buttons the arrow, so set them here once. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  select:not(:disabled),
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
+  :disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+/*
+ * The control the guided tour points at. Outside the layers, so it wins over a
+ * button's own outline-none.
+ */
+[data-tour-active="true"] {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
